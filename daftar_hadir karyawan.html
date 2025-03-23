@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hadir Karyawan Alfamart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Hadir Karyawan Alfamart</h1>
+
+        <!-- Form untuk memasukkan data hadir -->
+        <form id="attendance-form">
+            <label for="employee-name">Nama Karyawan:</label>
+            <input type="text" id="employee-name" required>
+
+            <label for="attendance-date">Tanggal:</label>
+            <input type="date" id="attendance-date" required>
+
+            <label for="attendance-status">Status Kehadiran:</label>
+            <select id="attendance-status" required>
+                <option value="Hadir">Hadir</option>
+                <option value="Izin">Izin</option>
+                <option value="Sakit">Sakit</option>
+                <option value="Cuti">Cuti</option>
+            </select>
+
+            <button type="submit">Tambah Kehadiran</button>
+        </form>
+
+        <!-- Tabel Daftar Hadir -->
+        <h2>Daftar Hadir Karyawan</h2>
+        <table id="attendance-table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditambahkan di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
